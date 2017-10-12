@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script src="strChange.js"></script>
+	<script>
+		var str="我是一匹来自北方的{{name}}，却在{{where}}冻成了{{other}}";
+		var obj={
+			"name":"狼",
+			"where":"南方",
+			"other":"狗"
+		}
+		str=change_pro(str,obj);
+		console.log(str);
+	</script>
+</body>
+</html>

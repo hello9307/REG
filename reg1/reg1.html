@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var str="我是一匹来自北方的name，却在where冻成了other";
+		var reg=/\w+/;
+		var obj={
+			"name":"狼",
+			"where":"南方",
+			"other":"狗"
+		}
+		var result;
+		while(result=reg.exec(str)){
+			var key=result[0];
+			var value=obj[key];
+			console.log(value);
+			str = str.replace(key,value);
+			console.log(str);
+		}
+		console.log(str);
+	</script>
+</body>
+</html>
